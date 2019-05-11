@@ -86,7 +86,7 @@ abstract class ConfigGenerationSuite {
         .withArguments("tasks", "--all")
         .build()
 
-    assertTrue(result.getOutput.lines.contains("bloopInstall"))
+    assertTrue(result.getOutput.linesIterator.contains("bloopInstall"))
   }
 
   @Test def worksWithScala211Project(): Unit = {
